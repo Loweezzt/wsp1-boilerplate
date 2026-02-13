@@ -20,3 +20,7 @@ Om du hittar något som är fel, behöver uppdateras eller fixas så skapa gärn
 
 För att köra testerna så kör `npm test` i terminalen. Det kommer att köra alla tester i `__tests__` mappen.
 
+
+
+
+Kom fram till Microblogg på jenshemsida.
