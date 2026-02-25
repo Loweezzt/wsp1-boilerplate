@@ -1,15 +1,20 @@
 {% extends "layout.njk" %}
 
 {% block content %}
-{% include "components/header.njk" %}
-<main class="wrapper">
-    <p>Lära mig mappstruktur och felhanteringar.</p>
-    <ul>
-        <li>npm run dev</li>
-        <li>npm test</li>
-        <li>npm start</li>
-    </ul>
-    <p>YOOO</p>
+<main>
+    <h1>{{ title }}</h1>
+    {% for post in posts %}
+    <article>
+        <header>
+            <h2>{{ post.name }}</h2>
+        </header>
+        <p>{{ post.content }}</p>
+        <footer>
+            <p>Posted on {{ post.created_at }}</p>
+        </footer>
+    </article>
+    {% else %}
+    <h2>Inga inlägg att visa.</h2>
+    {% endfor %}
 </main>
-{% include "components/footer.njk" %}
 {% endblock %}
