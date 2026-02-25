@@ -3,7 +3,7 @@ import pool from "../config/db.js"
 
 const router = express.Router()
 
-router.get("/", async (req, res, next) => {
+router.get("/posts", async (req, res, next) => {
     try {
         const [rows] = await pool.query(`
             SELECT post.id, post.content, post.created_at, user.name

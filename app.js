@@ -4,6 +4,7 @@ import nunjucks from "nunjucks"
 import morgan from 'morgan'
 
 import indexRouter from './routes/index.js'
+import postsRouter from './routes/posts.js'
 
 const app = express()
 const port = 3000 || process.env.PORT
