@@ -1,28 +1,27 @@
 {% extends "layout.njk" %}
 
 {% block content %}
-<main>
-    <h1>{{ title }}</h1>
-    {% for movie in movies %}
-    <article>
-        <main class="movies"> {%
-            for movie in movies %} {% set img = movie.image or movie.img or movie.poster or movie.picture or movie.filename or movie.file %}
-                                    <article class="movie"> {% if img %}
-                                                <img src="/css/{{ img }}" alt="{{ movie.title or movie.name or 'movie poster' }}" />
-                                                {% endif %}
-                                    </article> {% endfor %}
-        </main>
-                <section>
-                        {% if movie.description %}
-                            <p>{{ movie.description }}</p>
-                    {% endif %}
-                </section>
-        <footer>
-        </footer>
-    </article>
+<h1>{{ title }}</h1>
+<main class="movies">
+
+    {% if movies and movies | length %}
+        {% for movie in movies %}
+            {% set img = movie.image or movie.img or movie.poster or movie.picture or movie.filename or movie.file %}
+            <article class="movie">
+                {% if img %}
+                    <img src="/css/{{ img }}" alt="{{ movie.title or movie.name or 'movie poster' }}" />
+                {% endif %}
+                {% if movie.title or movie.name %}
+                    <h3>{{ movie.title or movie.name }}</h3>
+                {% endif %}
+                {% if movie.description %}
+                    <p>{{ movie.description }}</p>
+                {% endif %}
+            </article>
+        {% endfor %}
     {% else %}
         <h2>Inga filmer att visa.</h2>
-    {% endfor %}
+    {% endif %}
 
 </main>
 {% endblock %}

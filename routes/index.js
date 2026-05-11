@@ -9,7 +9,7 @@ router.get("/", async (req, res, next) => {
             SELECT *
             FROM Movies
         `)
-        res.render("index.njk", { title: "Notflix", movies: rows })
+        res.render("index.njk", { title: "NOTFLIX", movies: rows })
     } catch (err) {
         next(err)
     }
