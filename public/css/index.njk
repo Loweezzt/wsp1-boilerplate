@@ -1,0 +1,21 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+<main>
+    <h1>{{ title }}</h1>
+
+    {% if movies and movies | length %}
+        {% for movie in movies %}
+            <article>
+                    <figure>
+                        <img src="/css/{{ img }}" alt="{{ movie.title or movie.name or 'movie poster' }}" />
+                    </figure>
+                {% endif %}
+            </article>
+        {% endfor %}
+    {% else %}
+        <h2>Inga filmer att visa.</h2>
+    {% endif %}
+
+</main>
+{% endblock %}

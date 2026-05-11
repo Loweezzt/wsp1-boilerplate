@@ -3,18 +3,26 @@
 {% block content %}
 <main>
     <h1>{{ title }}</h1>
-    {% for post in posts %}
+    {% for movie in movies %}
     <article>
-        <header>
-            <h2>{{ post.name }}</h2>
-        </header>
-        <p>{{ post.content }}</p>
+        <main class="movies"> {%
+            for movie in movies %} {% set img = movie.image or movie.img or movie.poster or movie.picture or movie.filename or movie.file %}
+                                    <article class="movie"> {% if img %}
+                                                <img src="/css/{{ img }}" alt="{{ movie.title or movie.name or 'movie poster' }}" />
+                                                {% endif %}
+                                    </article> {% endfor %}
+        </main>
+                <section>
+                        {% if movie.description %}
+                            <p>{{ movie.description }}</p>
+                    {% endif %}
+                </section>
         <footer>
-            <p>Posted on {{ post.created_at }}</p>
         </footer>
     </article>
     {% else %}
-    <h2>Inga inlägg att visa.</h2>
+        <h2>Inga filmer att visa.</h2>
     {% endfor %}
+
 </main>
 {% endblock %}
