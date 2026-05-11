@@ -1,22 +1,12 @@
-# Webbserverprogrammering boilerplate
+Yooo
+Jag började med att ta din boilerplate som grund.
+Sedan startade jag Tableplus och försökte lära mig/ta mig in på det. Vilket gick sådär i början med sedan med lite hjälp gick det okej.
 
-Det här är ett startrepo som innehåller vanliga paket och filer du behöver för att köra igång ett nytt projekt.
+Jag hade redan en färdig plan på hur min grund till "NOTFLIX" skulle se ut genom att jag redan gjort den med hjälp av html och css. Nu behövde jag bara lära mig hur jag skulle göra likdant fast med JS och databaser. Men det har gått hyfsat.
 
-Du kan antingen göra en fork på repot, men förslagsvis så använder du "Use this template" knappen för att skapa ett nytt repo.
+Det som var svårt var att veta hur och var jag skulle börja, med efter lite snack med Jens och frågor på google, gick det ganska bra. Det var inte många rader med för mig var det ganska svåra rader i Index.njk. Fick många "endblock" eller "endfor" fel så att mina bilder eller ingeting alls lästes upp på hemsidan.
 
-Projekt är även hostat gratis på [render.com](https://render.com), du kan kika på det här [wsp1-boilerplate](https://wsp1-boilerplate.onrender.com/).
+Det svåraste var att både få det att se ut som jag ville, samtidigt som att bilderna inte skulle försvinna när jag  ändrade en rad eller två. 
 
-Om du hittar något som är fel, behöver uppdateras eller fixas så skapa gärna ett [issue](https://github.com/jensadev/wsp1-boilerplate/issues) på Github.
-
-## Starta projektet
-
-1. Klona repot
-2. Skapa en `.env` fil i rotmappen och fyll i dina databasuppgifter enligt `.env-example` filen
-3. Kör `npm install` för att installera alla beroenden
-4. Kör `npm start` för att starta servern
-5. Gå till `http://localhost:3000` i din webbläsare
-
-## Testa projektet
-
-För att köra testerna så kör `npm test` i terminalen. Det kommer att köra alla tester i `__tests__` mappen.
+Annars går det bra och jag vill fortsätta med att göra den snyggare och kanske något mer funktion så gör att jag kan intregera mer med hemisidna än att bara kolla på den.
 
