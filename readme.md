@@ -11,3 +11,10 @@ Det svåraste var att både få det att se ut som jag ville, samtidigt som att b
 Annars går det bra och jag vill fortsätta med att göra den snyggare och kanske något mer funktion så gör att jag kan intregera mer med hemisidna än att bara kolla på den.
 
 Nu håller jag på med att göra min hemsida användbar i telefonen. Det är svårt men borde lyckas okej.
+
+Det gick bra att göra den telefonvänlig. 
+
+Min nästa utmaning är att Validera min kod och få den fläckfri.
+Jag fick ett felmeddelanden med 15 errors som jag ska försöka fixa.
+
+Nästa lektion ska jag fortsätta med att validera min kod och fixa mina bilders storlekar så att de inte tar så mycket plats.
