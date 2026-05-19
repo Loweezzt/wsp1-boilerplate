@@ -18,3 +18,8 @@ Min nästa utmaning är att Validera min kod och få den fläckfri.
 Jag fick ett felmeddelanden med 15 errors som jag ska försöka fixa.
 
 Nästa lektion ska jag fortsätta med att validera min kod och fixa mina bilders storlekar så att de inte tar så mycket plats.
+Jag lyckas inte validera, jag har ett error om H2-H6 saker som validatorn vill att jag ska lägga till, vet inte varför eller vart jag ska göra det.
+
+Jag lyckades förminska mina bilder, så de tar ungefär 40% mindre utrymme på webbplatsen.
+försökte igen med valideringen och frågade chatten, men fattar fortfarande inte hur man gör.
+Jag pallar inte att chatten ska göra allt åt mig, låter hällre koden ha ett error.
