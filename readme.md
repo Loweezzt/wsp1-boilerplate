@@ -23,3 +23,6 @@ Jag lyckas inte validera, jag har ett error om H2-H6 saker som validatorn vill a
 Jag lyckades förminska mina bilder, så de tar ungefär 40% mindre utrymme på webbplatsen.
 försökte igen med valideringen och frågade chatten, men fattar fortfarande inte hur man gör.
 Jag pallar inte att chatten ska göra allt åt mig, låter hällre koden ha ett error.
+
+Nu fixade jag validtorn, nu har min kod noll errors. Ändrade article till section, fungerade inte. Sedan böt jag section till div och errorn försvann.
+Så nu är min kod hyfsat ren och bra. 

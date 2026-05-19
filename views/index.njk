@@ -7,7 +7,7 @@
     {% if movies and movies | length %}
         {% for movie in movies %}
             {% set img = movie.image or movie.img or movie.poster or movie.picture or movie.filename or movie.file %}
-            <article class="movie">
+            <div class="movie">
                 {% if img %}
                     <img src="/css/{{ img }}" alt="{{ movie.title or movie.name or 'movie poster' }}" />
                 {% endif %}
@@ -17,7 +17,7 @@
                 {% if movie.description %}
                     <h3>{{ movie.description }}</h3>
                 {% endif %}
-            </article>
+            </div>
         {% endfor %}
     {% else %}
         <h2>Inga filmer att visa.</h2>
